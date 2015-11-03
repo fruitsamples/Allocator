@@ -1,0 +1,171 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 38;
+	objects = {
+		01146B70FF672AC411CA0C5D = {
+			isa = PBXExecutableFileReference;
+			path = AllocatorExample;
+			refType = 3;
+		};
+		01D4F7FEFFB7A81311CA0CA4 = {
+			buildRules = (
+			);
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				OPTIMIZATION_CFLAGS = "-O0";
+			};
+			isa = PBXBuildStyle;
+			name = Development;
+		};
+		01D4F7FFFFB7A81311CA0CA4 = {
+			buildRules = (
+			);
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+			};
+			isa = PBXBuildStyle;
+			name = Deployment;
+		};
+//010
+//011
+//012
+//013
+//014
+//040
+//041
+//042
+//043
+//044
+		04857692FEEDB08B11CA0C5D = {
+			buildStyles = (
+				01D4F7FEFFB7A81311CA0CA4,
+				01D4F7FFFFB7A81311CA0CA4,
+			);
+			isa = PBXProject;
+			mainGroup = 04857693FEEDB08B11CA0C5D;
+			productRefGroup = 04857694FEEDB08B11CA0C5D;
+			projectDirPath = "";
+			targets = (
+				0485769FFEEDB08B11CA0C5D,
+			);
+		};
+		04857693FEEDB08B11CA0C5D = {
+			children = (
+				04857697FEEDB08B11CA0C5D,
+				04857694FEEDB08B11CA0C5D,
+				04857698FEEDB08B11CA0C5D,
+				0485769DFEEDB08B11CA0C5D,
+			);
+			isa = PBXGroup;
+			name = AllocatorExample;
+			refType = 4;
+		};
+		04857694FEEDB08B11CA0C5D = {
+			children = (
+				01146B70FF672AC411CA0C5D,
+			);
+			isa = PBXGroup;
+			name = Products;
+			refType = 4;
+		};
+		04857697FEEDB08B11CA0C5D = {
+			isa = PBXFileReference;
+			path = AllocatorExample.c;
+			refType = 4;
+		};
+		04857698FEEDB08B11CA0C5D = {
+			children = (
+			);
+			isa = PBXGroup;
+			name = "Supporting Files";
+			refType = 4;
+		};
+		0485769DFEEDB08B11CA0C5D = {
+			children = (
+				0485769EFEEDB08B11CA0C5D,
+			);
+			isa = PBXGroup;
+			name = "External Frameworks and Libraries";
+			refType = 4;
+		};
+		0485769EFEEDB08B11CA0C5D = {
+			isa = PBXFrameworkReference;
+			name = CoreFoundation.framework;
+			path = /System/Library/Frameworks/CoreFoundation.framework;
+			refType = 0;
+		};
+		0485769FFEEDB08B11CA0C5D = {
+			buildPhases = (
+				048576A0FEEDB08B11CA0C5D,
+				048576A1FEEDB08B11CA0C5D,
+				048576A3FEEDB08B11CA0C5D,
+				048576A5FEEDB08B11CA0C5D,
+			);
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(LOCAL_DEVELOPER_DIR)/Demos";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = AllocatorExample;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+			};
+			dependencies = (
+			);
+			isa = PBXToolTarget;
+			name = AllocatorExample;
+			productInstallPath = "$(LOCAL_DEVELOPER_DIR)/Demos";
+			productName = AllocatorExample;
+			productReference = 01146B70FF672AC411CA0C5D;
+			shouldUseHeadermap = 0;
+		};
+		048576A0FEEDB08B11CA0C5D = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXHeadersBuildPhase;
+		};
+		048576A1FEEDB08B11CA0C5D = {
+			buildActionMask = 2147483647;
+			files = (
+				048576A2FEEDB08B11CA0C5D,
+			);
+			isa = PBXSourcesBuildPhase;
+		};
+		048576A2FEEDB08B11CA0C5D = {
+			fileRef = 04857697FEEDB08B11CA0C5D;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		048576A3FEEDB08B11CA0C5D = {
+			buildActionMask = 2147483647;
+			files = (
+				048576A4FEEDB08B11CA0C5D,
+			);
+			isa = PBXFrameworksBuildPhase;
+		};
+		048576A4FEEDB08B11CA0C5D = {
+			fileRef = 0485769EFEEDB08B11CA0C5D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		048576A5FEEDB08B11CA0C5D = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXRezBuildPhase;
+		};
+	};
+	rootObject = 04857692FEEDB08B11CA0C5D;
+}
